@@ -1,14 +1,160 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>Hello world!</h1>
-    <script src="./js/app.js"></script>
-</body>
-</html>
+  <head> 
+    <meta charset="UTF-8">   
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sonya Stewart Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="css/layout.css"/>
+    <link rel="stylesheet" type="text/css" href="css/styles.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lobster">
+    </head>
+  
+    <body>
+     <div class="container">
+         <header id="banner"> 
+            <a id="logo"href="index.html"><img id="sslogo" src="Images.html\ss_black_transparent.png" alt="no image found" width="300px"></a>
+             
+            <nav>
+                <button class="nav-menu">menu
+                    <downArrow class="arrow down"></downArrow>
+                </button>
+                <ul>
+                    <li><a href="#about-me">About Me</a></li>
+                    <li><a href="#my-skills">My Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact </a></li>
+                    <li><a href="resume.html">My Resume</a></li>
+                </ul>
+            </nav>  
+            
+        </header>
+        <br>
+         <main>           
+                   <section id="about-sonya">
+                            <div class="img-container">
+                                <img id="headshot" src="Images.html\WCCI221-089.jpg" alt="no image found" width="300">
+                                </div>
+                                <div id="about-me" class="about-me">
+                          <h2>About Me</h2>
+                          <div class="bio"> 
+                              <p>I am a recent graduate from We Can Code IT Bootcamp and currently an aspiring Jr Software Engineer.</p><br>
+                              I naturally enjoy seeking out solutions to complex problems personally and professionally, so it was easy to navigate
+                            towards this field.</p><br>I plan to use everything that i've learned from this program for real 
+                            world scenarios and creating a difference in our evolving world.</p>
+                            </div>
+                                </div>
+                                <div id="my-skills" class="skills">
+                                    <h2>Skills</h2>
+                                    <div class="all-skills">
+                                    <div class="skill items">
+                                        <ul>
+                                            <li>Java</li>
+                                            <li>Spring</li>
+                                            <li>Hibernate</li>
+                                            <li>JPA</li>
+                                            <li>JavaScript</li>
+                                            <li>HTML</li>
+                                            <li>CSS</li>
+                                            <li>Flexbox</li>
+                                            <li>Grid</li>
+                                            <li>TDD</li>
+                                            <li>Agile (Scrum)</li>
+                                            <li>Object Oriented Programming (OOP)</li>
+                                            <li>AJAX</li>
+                                            <li>JSON</li>
+                                            <li>Restful APIs</li>
+                                            <li>Responsive Design / Mobile</li>
+                                            <li>Structured Query Langauge (SQL)</li>
+                                            <li>Relational Databases</li>
+                                            <li>Source Control / Git</li>
+                                        </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                        </section>
+                            <br>    
+                      
+                      <div id="projects"><h2>Project Previews</h2>
 
+                 <div class="slideshow-container">
+                     <!-- Full-width images with number and caption text  -->
+                     <div class="mySlides fade">
+                        <div class="number-text">1 / 3</div>
+                        <img src="Images.html\donutMaker screenshot.png" style="width:100%">
+                        <div class="text">DonutMaker Clicker Game</div> 
+                         <button class="collapsible">Description</button>
+                        <div class="content">
+                            <p>
+                                Welcome to Fred the Baker's Baking Company! 
+                                Fred the Baker's Baking Company has been around since 1970. Fred has been known for having the freshest glazed donuts you ever ate! 
+                                As of late, he's been getting more orders than he can handle and he needs your help to keep the business running. 
+                                Ready to get your hands sticky with the Donut Maker?
+
+                                DonutMaker game was inspired by the game Cookie Clicker. This project taught us how to use JavaScript to create a Single Page Application.
+                            </p>
+                            <a href="https://github.com/2020-Winter-Cohort/module-4---donut-maker-sonyastewart/tree/main" target="_blank">view project on
+                                github</a>      
+                         </div>
+                     </div>
+                    <div class="mySlides fade">
+                        <div class="number-text">2 / 3</div>
+                        <img src="Images.html\mastery-project-screenshot2.png" style="width:100%">
+                        <div class="text">Blog Mastery Project: Surviving Bootcamp</div> 
+                         <button class="collapsible">Description</button>
+                        <div class="content">
+                            <p>This is a website built using Spring Web MVC for linking Java to HTML. The CSS is minimal as
+                                the focus was learning SpringBoot. 
+                                 </p>
+                            <a href="https://github.com/2020-Winter-Cohort/2020-winter-cohort-mastery-sonyastewart" target="_blank">view project on github</a>
+                        </div> 
+                     </div>
+    
+                    <div class="mySlides fade">
+                        <div class="number-text">3 / 3</div>
+                        <img src="Images.html\Screenshot virtual pet shelter.png" style="width:100%">
+                        <div class="text">Virtual Pet Shelter</div> 
+                         <button class="collapsible">Description</button>
+                        <div class="content">
+                            <p> Java based, Tamagotchi-style console application for virtual pets. In this game, we used Inheritance, 
+                                Encapsulation, and Polymorphism to display a pet's hunger, thirst, boredom, and tiredness. We also used a tick method to represent the passage of time. 
+                            Maybe one day, you'll create a virtual pet of your own!</p>
+                            <a href="https://github.com/sonyastewart/virtual-pet-sstewart" target="_blank">view project on github</a>
+                        </div> 
+                     </div> 
+                     
+                    <!-- Next and previous buttons -->
+                     <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            
+                <br>
+    
+                <div class="project-selector-dots" style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                </div>
+                </div>
+            </div> 
+            <br>
+            <section id="contact" class="contact-info">
+                <h2>Contact Information</h2>
+              <ul>
+                <li><a href="https://www.linkedin.com/in/sonyathedeveloper/" target="_blank"><img id=linkedin-icon
+                    src="Images.html\linkedIn icon.png"></a>
+                </li>
+                <li><a href="https://github.com/sonyastewart" target="_blank"><img id="github-icon"
+                    src="Images.html\github icon.png"></a></li>
+              </ul>
+              </section>
+         </main>     
+         <footer>
+            <a href="#banner"><img id="arrow" src="Images.html\up arrow.png"></a>
+            <span class="Copyright">&copy; 2021 Sonya Stewart</span>
+            </footer>      
+                </div> 
+                <script src="./js/app.js" type="text/javascript"></script>     
+      </body>      
+    </html>
+    

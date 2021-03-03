@@ -1,0 +1,119 @@
+header {
+    background-color: #fae3ec;
+}
+.sonya-stewart {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5vmax;
+    font-weight: bolder;
+    font-family: 'Lobster', cursive;
+}
+
+#sslogo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 24%;
+    height: 95%;
+    
+}
+.img-container {
+    display: flex;
+}
+
+#headshot {
+    border-radius: 50%;
+    margin: auto;
+}
+
+#linkedin-icon, #github-icon {
+    height: 150px;
+    width: 150px;
+    transition: transform .2s;
+}
+
+#linkedin-icon:hover, #github-icon:hover, #arrow:hover {
+    transform: scale(1.25);
+}
+
+#arrow {
+    height: 50px;
+    width: 50px;
+    transition: transform .2s;
+}
+
+.container {
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+    min-height: 100vh;
+}
+
+h2 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+    font-family: 'Lobster', cursive;
+}
+
+/* h3 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+} */
+
+.collapsible {
+    background-color: black;
+    color: #fae3ec;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+}
+
+.expanded, .collapsible:hover {
+    background-color: rgb(70, 68, 68);
+}
+
+.content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: #f1f1f1;
+}
+
+.collapsible:after {
+    content: '+';
+    font-size: 20px;
+    font-weight: bolder;
+    color: dimgray;
+    float: right;
+    margin-left: 5px;
+}
+
+.expanded:after {
+    content: '-';
+}
+
+.content {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-out;
+}
+
+ downArrow {
+    border: solid darkgray;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+}
+
+.down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+} 

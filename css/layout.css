@@ -1,0 +1,241 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --pink: #fae3ec;
+}
+
+/* .container {
+    display: grid;
+    grid-template-rows: 180px auto 50px;
+    grid-gap: 10px;
+} */
+
+.container > header {
+    display: grid;
+    border-bottom: 1px solid dimgray;
+}
+
+.container > header nav {
+    margin-top: 155px;
+    margin-left: 2rem;
+    position: absolute;
+}
+
+.container > header nav ul {
+    background-color:black;
+    display: none;
+}
+
+.container > header nav ul li {
+    margin-top: 1rem;
+    list-style: none;
+}
+
+.container > header nav ul li a {
+    color: var(--pink);
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+}
+
+.container > header nav ul li.active a {
+    background-color: var(--pink);
+    color: white;
+}
+#logo {
+    grid-column: 1;
+    height:125px ;
+}
+.nav-menu {
+    border: var(--pink) solid 1px;
+    color: #fae3ec;
+    background-color:black;
+    cursor: pointer;
+    padding: 0.3em;
+    text-decoration: none;
+    font-size: 4vmin;
+    font-family: 'Lobster', cursive;
+
+}
+
+#about-sonya {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 5rem;
+    grid-gap: 2rem;
+}
+
+.about-me {
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 10% auto auto;
+}
+#my-skills {
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 10% auto;
+}
+.skills ul {
+   
+    justify-content:center;
+    text-align: center;
+    list-style-type: none;
+    
+}
+
+ /* #my-skills{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto auto;
+} */
+/* Slideshow container */
+.slideshow-container {
+    max-width: 700px;
+    position: relative;
+    margin: auto; 
+     z-index: 0;
+    border: solid dimgray;
+    padding: 5px;
+    border-radius: 10px; 
+}
+
+/* Hide the images by default */
+ .mySlides {
+    display: none; 
+     margin-top: 25px; 
+}
+
+/* Next & previous buttons */
+ .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+   
+} 
+
+/* Position the "next button" to the right */
+ .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+} 
+
+ /*On hover, add a black background color with a little bit see-through */
+ .prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+} 
+
+ /*Caption text*/
+ .text {
+    color: black;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0; 
+    width: 100%;
+    text-align: center;
+}  
+
+ /*Number text (1/3 etc) */
+ .number-text {
+    color: dimgray;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    left: 0; 
+} 
+
+ /*The dots/bullets/indicators */
+ .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+} 
+
+ .dotActive, .dot:hover {
+    background-color: #717171;
+}
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  } 
+
+#contact {
+    align-self: center;
+    min-height: 50vh;
+    padding: 5rem;
+}
+
+.contact-info ul {
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    list-style-type: none;
+    padding: 2rem;
+}
+
+
+footer {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.Copyright {
+    margin-left: 2rem;
+}
+
+
+
+@media only screen and (max-width: 1100px) {
+    
+    #about-sonya {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+
+    #headshot {
+        height: 50%;
+        width: 50%;
+        border-radius: 50%;
+        margin: auto;
+    }
+    .bio {
+        padding: 20px;
+    }
+}
+
+
